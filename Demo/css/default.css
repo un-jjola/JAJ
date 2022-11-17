@@ -1,0 +1,10 @@
+/* 모든 부분에 적용되는 default.css */
+
+body{
+    background-color: rgb(202, 241, 255);
+  }
+  
+*{
+  font-family: 'Nanum Pen Script', cursive;
+}
+  /* *: 모든 것에 해당하는 css 선택자 */
