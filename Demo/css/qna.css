@@ -1,0 +1,50 @@
+#qna {
+    display: none;
+  }
+  
+  .qBox {
+    background-color: rgb(191, 248, 214);
+    text-align: center; /* 중앙정렬 */
+    font-size: 30px;
+    width: 80%
+  }
+
+  .answerList{ /*박스 크기 줄이기*/
+    background-color: whitesmoke;
+    display: block; /* 버튼 한줄씩 할당, 버튼을 한줄에서 5줄로 만듬 */
+    width: 70%; /* 버튼 폭 */
+    border: 0px; /* 버튼 테두리 제거 */
+    font-size: 27px;
+  }
+  
+  .answerList:hover, .answerList:focus { /* 마우스를 올리거나 클릭할 때 색 변화 */
+    background-color: rgb(202, 241, 255); /* 마우스 올릴때 색*/
+    color: whitesmoke;
+  }
+  
+  .status { /* 진행 바 배경 */
+    height: 20px;
+    width: 80%;
+    background-color: rgb(248, 241, 228);
+    border-radius: 20px;
+  }
+  
+  .statusBar { /* 진행 바 진행 상황 */
+    height: 100%;
+    border-radius: 20px;
+    background: #ebd1f5;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #ebd1f5 0%, #eac4f9 50%, #e3a6fb 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ebd1f5 0%, #eac4f9 50%, #e3a6fb 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ebd1f5 0%, #eac4f9 50%, #e3a6fb 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebd1f5', endColorstr='#e3a6fb', GradientType=0);
+    /* IE6-9 */
+  }
+  
+  .answerBox{
+    width: 80%;
+  }
+  

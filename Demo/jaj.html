@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="urf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- 모바일 비율 조정, 모든 장치에서 웹 사이트 잘 보이도록 설정 -->
+  <meta name="keywords" content="인터페이스 집부, 집부 테스트, 내가 인터페이스 집부가 된다면?"> <!-- 검색 엔진을 위한 키워드 정의 -->
+  <meta name="description" content="절대집부안쫄조"> <!-- 웹 페이지에 대한 설명 정의 -->
+  <meta name="author" content="세종대학교인터페이스절대안쫄조"> <!-- 문서의 저자를 정의 -->
+
+  <!-- sns share -->
+  <meta property="og:url" content="https://jaj-interface.netlify.app" />     <!-- 배포하는 웹사이트 url 기입 -->
+  <meta property="og:title" content="인터페이스 집부 테스트"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="img/img_12.png"/>
+  <meta property="og:description" content="재미로 알아보는 집부 테스트"/>
+
+  <!-- favicon --> <!-- 웹사이트 상단부에 조그마한 로그 -->
+  <link rel="shortcut icon" href="img/img_13.ico">
+  <link rel="apple-touch-icon-precomposed" href="img/img_13.ico">
+
+  <title>IF-집부 테스트</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- 구글폰트 이용 -->
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet"> 
+
+  <!-- css파일 불러오기 -->
+  <link rel="stylesheet" href="./css/default.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/qna.css">
+  <link rel="stylesheet" href="./css/animation.css">
+  <link rel="stylesheet" href="./css/result.css">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="header">
+      <img src="./img/img_11.png" alt="절대안쫄조?" class="img-fluid">
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- main페이지 -->
+    <section id="main" class="mx-auto my-5 py-5 px-3">
+      <div id ="title">
+        내가 인터페이스 집부가 된다면? 
+      </div>
+      <div class="col-lg-8 col-md-9 col-sm-10 col-12 mx-auto"> <!--부트스트랩 사용자 맞춤 해상도 제공 col -->
+        <img src="./img/img_10.png" alt="mainImage" class="img-fluid" > <!--fluid: container 크기를 이미지가 따라가도록 만듬.--> 
+      </div>
+      <p>
+        나에게 맞는 인터페이스 집부 역할 찾기 사이트입니다! <br> <!-- br: 줄바꿈 -->
+        아래 버튼을 눌러 시작해 주세요!
+      </p> 
+      <button type="button" class="btn btn-outline-warning btn-lg mt-3" onclick="js:begin()">검사 쫄?</button>
+    </section>
+
+    <!-- qna페이지 -->
+    <section id="qna">
+      <div class="status mx-auto mt-4">
+        <div class="statusBar">
+        </div>
+      </div>
+      <div class="qBox my-5 py-3 mx-auto">
+
+      </div>
+      <div class="answerBox mx-auto">
+
+      </div>
+    </section>
+
+    <!-- result페이지 -->
+    <section id="result" class="mx-auto my-5 py-5 px-3">
+        <h1>당신의 결과는?!</h1>
+        <div class="resultname">
+
+        </div>
+        <div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto"> <!-- my: 이미지와 글씨 사이의 간격 -->
+
+        </div>
+        <div class="resultDesc">
+  
+        </div>
+        <button type="button" class="kakao mt-3 py-3 px-4">공유 쫄?</button>
+    </section>
+
+    <!-- body태그 끝나는 부분에 js파일 저장 -->
+    <script src="./js/data.js" charset="utf-8"></script>
+    <script src="./js/start.js" charset="utf-8"></script>
+    <script src="./js/share.js" charset="utf-8"></script>
+  </div>
+</body>
+  
+</html>

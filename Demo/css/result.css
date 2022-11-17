@@ -1,0 +1,36 @@
+#result{
+  display: none;
+  background-color: white;
+  width: 100%; /* 초록색 부분 마진 값? */
+  text-align: center; /* 메인페이지 글자 가운데 정렬 */
+  border-radius: 20px; /* 모서리를 둥글게 만듬 */
+}
+  
+#shareResult{
+  background-color: rgb(211, 230, 250);
+  width: 100%;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.resultname{
+  font-size: 30px;
+}
+  
+.resultDesc{
+  font-size: 23px;
+  height: 10%;
+}
+
+.kakao{
+  color: white;
+  background-color: #FFE500;
+  font-size: 23px;
+  border: 0px;
+  border-radius: 20px;
+}
+
+.kakao:hover, .kakao:focus{
+  background-color: white;
+  color: #FFE500;
+}
