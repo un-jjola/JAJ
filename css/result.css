@@ -5,32 +5,33 @@
   text-align: center; /* 메인페이지 글자 가운데 정렬 */
   border-radius: 20px; /* 모서리를 둥글게 만듬 */
 }
-  
-#shareResult{
-  background-color: rgb(211, 230, 250);
-  width: 100%;
-  text-align: center;
-  border-radius: 20px;
-}
 
-.resultname{
-  font-size: 30px;
+.resultname1{
+  font-size: 50px;
 }
-  
+.resultname2{
+  font-size: 30px;
+  text-align: center; /* 메인페이지 글자 가운데 정렬 */
+
+}
+.resultname3{
+  font-size: 30px;
+  text-align: center; /* 메인페이지 글자 가운데 정렬 */
+
+}
+    
 .resultDesc{
   font-size: 23px;
   height: 10%;
 }
 
-.kakao{
-  color: white;
-  background-color: #FFE500;
-  font-size: 23px;
-  border: 0px;
-  border-radius: 20px;
+#result23_grid{
+  padding: 50px;
+  display:grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
 }
 
-.kakao:hover, .kakao:focus{
-  background-color: white;
-  color: #FFE500;
+.result23{
+  width :50%;
 }
