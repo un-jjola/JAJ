@@ -249,7 +249,18 @@ function begin(){
     // begin함수가 끝나는 시점에 goNext함수를 실행시킨다.
     goNext(qIdx);  
   }, 450);
+}
 
-  
-} 
-
+//모든 결과 확인 쫄? 버튼을 누르면 result 사라지고 resultAll 등장 js
+function resultAllbutton(){
+  result.style.WebkitAnimation = "fadeOut 1s";
+  result.style.animation = "fadeOut 1s";
+  setTimeout(() => {
+    All.style.WebkitAnimation = "fadeIn 1s";
+    All.style.animation = "fadeIn 1s";
+    setTimeout(() => {
+      result.style.display = "none";
+      All.style.display = "block";
+    }, 450)
+  }, 450); 
+}
