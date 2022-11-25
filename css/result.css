@@ -8,16 +8,17 @@
 
 .resultname1{
   font-size: 50px;
+  font-weight: bold;
 }
 .resultname2{
   font-size: 30px;
   text-align: center; /* 메인페이지 글자 가운데 정렬 */
-
+  font-weight: bold;
 }
 .resultname3{
   font-size: 30px;
   text-align: center; /* 메인페이지 글자 가운데 정렬 */
-
+  font-weight: bold;
 }
     
 .resultDesc{

@@ -6,7 +6,7 @@
     background-color: rgb(191, 248, 214);
     text-align: center; /* 중앙정렬 */
     font-size: 30px;
-    width: 80%
+    width: 80%;
   }
 
   .answerList{ /*박스 크기 줄이기*/

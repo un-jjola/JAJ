@@ -9,21 +9,23 @@
   <meta name="author" content="세종대학교인터페이스절대안쫄조"> <!-- 문서의 저자를 정의 -->
 
   <!-- sns share -->
-  <meta property="og:url" content="https://jaj-interface.netlify.app" />     <!-- 배포하는 웹사이트 url 기입 -->
-  <meta property="og:title" content="인터페이스 집부 테스트"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:image" content="img/img_12.png"/>
-  <meta property="og:description" content="재미로 알아보는 집부 테스트"/>
+  <meta property="og:url" content="https://jaj-interface.netlify.app" /> <!-- 배포하는 웹사이트 url 기입 -->
+  <meta property="og:title" content="인터페이스 집부 테스트" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="img/img_12.png" />
+  <meta property="og:description" content="재미로 알아보는 집부 테스트" />
 
-  <!-- favicon --> <!-- 웹사이트 상단부에 조그마한 로그 -->
+  <!-- favicon -->
+  <!-- 웹사이트 상단부에 조그마한 로그 -->
   <link rel="shortcut icon" href="img/img_13.ico">
   <link rel="apple-touch-icon-precomposed" href="img/img_13.ico">
 
   <title>IF-집부 테스트</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <!-- 구글폰트 이용 -->
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
 
   <!-- css파일 불러오기 -->
   <link rel="stylesheet" href="./css/default.css">
@@ -31,7 +33,7 @@
   <link rel="stylesheet" href="./css/qna.css">
   <link rel="stylesheet" href="./css/animation.css">
   <link rel="stylesheet" href="./css/result.css">
-
+  <link rel="stylesheet" href="./css/resultAll.css">
 </head>
 
 <body>
@@ -45,16 +47,18 @@
   <div class="container">
     <!-- main페이지 -->
     <section id="main" class="mx-auto my-5 py-5 px-3">
-      <div id ="title">
-        내가 인터페이스 집부가 된다면? 
+      <div id="title">
+        내가 인터페이스 집부가 된다면?
       </div>
-      <div class="col-lg-8 col-md-9 col-sm-10 col-12 mx-auto"> <!--부트스트랩 사용자 맞춤 해상도 제공 col -->
-        <img src="./img/img_10.png" alt="mainImage" class="img-fluid" > <!--fluid: container 크기를 이미지가 따라가도록 만듬.--> 
+      <div class="col-lg-8 col-md-9 col-sm-10 col-12 mx-auto">
+        <!--부트스트랩 사용자 맞춤 해상도 제공 col -->
+        <img src="./img/img_10.png" alt="mainImage" class="img-fluid">
+        <!--fluid: container 크기를 이미지가 따라가도록 만듬.-->
       </div>
       <p>
         나에게 맞는 인터페이스 집부 역할 찾기 사이트입니다! <br> <!-- br: 줄바꿈 -->
         아래 버튼을 눌러 시작해 주세요!
-      </p> 
+      </p>
       <button type="button" class="btn btn-outline-warning btn-lg mt-3" onclick="js:begin()">검사 쫄?</button>
     </section>
 
@@ -74,42 +78,148 @@
 
     <!-- result페이지 -->
     <section id="result" class="mx-auto my-5 py-5 px-3">
-        <h1>당신의 결과는?!</h1>
-        <div id="result1">
-          <div class="resultname1">
-          </div>
-          <div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto"> <!-- my: 이미지와 글씨 사이의 간격 -->
-          </div>
-          <div class="resultDesc">
-          </div>
+      <h1>당신의 결과는?!</h1>
+      <div id="result1">
+        <div class="resultname1">
         </div>
-        
-        <div id="result23_grid">
+        <div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+          <!-- my: 이미지와 글씨 사이의 간격 -->
+        </div>
+        <div class="resultDesc">
+        </div>
+      </div>
 
-          <div class="result23">
-            <h2>2위</h2>
-            <div class="resultname2">
-            </div>
-            <div id="resultImg2" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto"> 
-            </div>
+      <div id="result23_grid">
+        <div class="result23">
+          <h2>2위</h2>
+          <div class="resultname2">
           </div>
-            
-          <div class="result23">
-            <h2>3위</h2>
-            <div class="resultname3">
-            </div>
-            <div id="resultImg3" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto"> <!-- my: 이미지와 글씨 사이의 간격 -->
-            </div>
+          <div id="resultImg2" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
           </div>
-          
         </div>
-       
+
+        <div class="result23">
+          <h2>3위</h2>
+          <div class="resultname3">
+          </div>
+          <div id="resultImg3" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+            <!-- my: 이미지와 글씨 사이의 간격 -->
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-outline-warning btn-lg mt-3" onclick="js:resultAllbutton()">모든 결과 확인 쫄?</button>
+    </section>
+    <section id="All" class="mx-auto my-5 py-5 px-3">
+      <div id="resultAll">
+        <div class="resultAllname">
+          인페의 아버지 '회장'
+        </div>
+        <div id="resultAllImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+          <img src="./img/img_0.png" alt="0" class="img-fluid">
+        </div>
+        <div class="resultAllDesc">
+          - 동아리 진행방향과 활동을 결정하는 총결정권자! <br>
+          - 인터페이스를 위해 매달 중앙동아리 회의 참석 등 열일 중... <br>
+          - 왕관을 쓰려는 자, 그 무게를 견뎌라!
+        </div>
+      </div>
+      <div id="resultAll">
+        <div class="resultAllname">
+          인페의 어머니 '고문'
+        </div>
+        <div id="resultAllImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+          <img src="./img/img_1.png" alt="0" class="img-fluid">
+        </div>
+        <div class="resultAllDesc">
+          - 집부 유경험자로써 동아리 진행상황 점검 및 조언! <br>
+          - 보이지 않는 곳에서 집부들을 품어주는 잔소리꾼(Feat. 하나부터 열가지 다 널 위한 소리~) <br>
+          - 고인물(윗기수)과 맑은물(아랫기수)을 고무고무!
+        </div>
+      </div>
+      <div id="resultAll">
+        <div class="resultAllname">
+          인페의 지갑 '총무'
+        </div>
+        <div id="resultAllImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+          <img src="./img/img_2.png" alt="0" class="img-fluid">
+        </div>
+        <div class="resultAllDesc">
+          - 인터페이스 회비 및 명부 관리! <br>
+          - 동아리 활동에 예산 배분 및 회비 지원! <br>
+          - 회비 지원 및 사용은 모두 총무 허락하에 사용 가능...
+        </div>
+      </div>
+      <div id="resultAll">
+        <div class="resultAllname">
+          인페의 개츠비 '기획'
+        </div>
+        <div id="resultAllImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+          <img src="./img/img_3.png" alt="0" class="img-fluid">
+        </div>
+        <div class="resultAllDesc">
+          - 학술적 행가 이외 모든 활동들을 기획 및 진행하는 행사 관리권자! <br>
+          - 개강총회, 종강총회, MT, 게임대회 등등 진행! <br>
+          - 개최하고 싶은 행사가 있다면 기획 및 진행 가능!
+        </div>
+      </div>
+      <div id="resultAll">
+        <div class="resultAllname">
+          인페의 공부천재 '학술'
+        </div>
+        <div id="resultAllImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+          <img src="./img/img_4.png" alt="0" class="img-fluid">
+        </div>
+        <div class="resultAllDesc">
+          - 스터디, 프전, 인커톤 등 모든 학술적 활동을 관리 및 기획! <br>
+          - 인페의 학술 중 c, 고c 인증시험 만점을 받은 사람이 있었다는 전설이...(하지만 전설은 전설일 뿐!) <br>
+          - 엠티와 뒤풀이에 학술의 "술" 이 빠질 순 없다! (N병은 기본...)
+        </div>
+      </div>
+      <div id="resultAll">
+        <div class="resultAllname">
+          인페의 해그위드 '소통'
+        </div>
+        <div id="resultAllImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+          <img src="./img/img_5.png" alt="0" class="img-fluid">
+        </div>
+        <div class="resultAllDesc">
+          - 동아리원들에게 인페의 중요한 공지사항이나 소식을 전달! <br>
+          - 공지문구를 재치있게 꾸미는 센스는 덤! <br>
+          - 동아리원들이 활동 중 궁금한 일이 생긴다면 답변은 소통의 임무!
+        </div>
+      </div>
+      <div id="resultAll">
+        <div class="resultAllname">
+          인페의 일기장 '서기'
+        </div>
+        <div id="resultAllImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+          <img src="./img/img_6.png" alt="0" class="img-fluid">
+        </div>
+        <div class="resultAllDesc">
+          - 동아리에서 일어나는 활동이나 회의를 기록으로 남기는 역할! <br>
+          - 인터페이스 커뮤니티의 총 관리권자! <br>
+          - 조선에는 사서가 쓴 조선왕조실록이 있다면, 인페에는 서기가 쓴 노션이 있지!
+        </div>
+      </div>
+      <div id="resultAll">
+        <div class="resultAllname">
+          인페의 반장&부반장 '기장&부기장'
+        </div>
+        <div id="resultAllImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+          <img src="./img/img_7.png" alt="0" class="img-fluid">
+        </div>
+        <div class="resultAllDesc">
+          - 신입기수를 대표하는 기장&부기장! <br>
+          - 신입생들의 동아리 활동 참여를 독려하는 역할! <br>
+          - 신입생들과 집부진들을 연결해주는 까마귀 같은 존재!
+        </div>
+      </div>
     </section>
 
-    <!-- body태그 끝나는 부분에 js파일 저장 -->
     <script src="./js/data.js" charset="utf-8"></script>
     <script src="./js/start.js" charset="utf-8"></script>
+
   </div>
 </body>
-  
+
 </html>
