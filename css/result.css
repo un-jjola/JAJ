@@ -27,12 +27,11 @@
 }
 
 #result23_grid{
-  padding: 50px;
+  padding: 20px;
   display:grid;
   place-items: center;
-  grid-template-columns: 1fr 1fr;
 }
 
 .result23{
-  width :50%;
+  width :100%;
 }
